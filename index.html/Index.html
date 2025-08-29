@@ -5,31 +5,325 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ocean Voice | Ocean Conservation, Education & Action Initiatives</title>
    
+   <!-- SEO & Metadata -->
    <meta name="description" content="Ocean Voice creates conservation films, education campaigns, and direct action initiatives. Join us to protect the ocean today with your donation.">
    <meta name="keywords" content="Ocean Voice, Fund Ocean Conservation, Ocean Initiatives, Marine Conservation Donation, Thirteen Moons, Coral Reefs, Otilio J. Nuñez, Protect Our Oceans, ocean nonprofit donations, donate for marine conservation, ocean education campaigns, save coral reefs">
    <meta name="author" content="Otilio J. Nuñez">
    <link rel="canonical" href="https://www.oceanvoicetv.com/">
    
-   <!-- This is the critical link to your stylesheet. -->
-   <link rel="stylesheet" href="style.css">
-   
+   <!-- Hreflang Tags for International SEO -->
+   <link rel="alternate" hreflang="en" href="https://www.oceanvoicetv.com/">
+   <link rel="alternate" hreflang="es" href="https://www.oceanvoicetv.com/es/">
+   <link rel="alternate" hreflang="fr" href="https://www.oceanvoicetv.com/fr/">
+   <link rel="alternate" hreflang="pt" href="https://www.oceanvoicetv.com/pt/">
+   <link rel="alternate" hreflang="zh" href="https://www.oceanvoicetv.com/zh/">
+   <link rel="alternate" hreflang="ru" href="https://www.oceanvoicetv.com/ru/">
+   <link rel="alternate" hreflang="de" href="https://www.oceanvoicetv.com/de/">
+   <link rel="alternate" hreflang="x-default" href="https://www.oceanvoicetv.com/">
+
+   <!-- Preconnect & Preload -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+   <!-- Social Media Meta -->
+   <meta property="og:title" content="Ocean Voice | Fund Cinematic Ocean Conservation & Action">
+   <meta property="og:description" content="Ocean Voice creates powerful conservation media, education campaigns, and action initiatives. Support us to protect the ocean today.">
+   <meta property="og:image" content="https://raw.githubusercontent.com/oceanvoicetv-del/OceanVoice-site/main/images/gallery/OCEANVOICETV_TURTLE_UNDER_OCEANVOICE_TITLE_2.jpg">
+   <meta property="og:url" content="https://www.oceanvoicetv.com/">
+   <meta property="og:type" content="website">
+   <meta property="twitter:card" content="summary_large_image">
+
+   <!-- Stylesheets -->
    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
    
-   <!-- SEO Schema Markup -->
+   <style>
+       :root {
+           --primary-color: #00b4d8;
+           --secondary-color: #0077b6;
+           --dark-bg: #01020a;
+           --light-bg: #080c24;
+           --text-light: #e0e0e0;
+           --text-dark: #ffffff;
+           --font-brand: 'Cormorant Garamond', serif;
+           --font-body: 'Montserrat', sans-serif;
+       }
+       * { margin: 0; padding: 0; box-sizing: border-box; }
+       html { scroll-behavior: smooth; }
+       body {
+           font-family: var(--font-body);
+           font-weight: 300;
+           color: var(--text-light);
+           background-color: var(--dark-bg);
+           line-height: 1.9;
+           overflow-x: hidden;
+       }
+       h1, h2, h3 {
+           font-family: var(--font-brand);
+           color: var(--text-dark);
+           font-weight: 700;
+           letter-spacing: 2px;
+           text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+       }
+       a { color: var(--primary-color); text-decoration: none; transition: color 0.3s ease; }
+       a:hover { color: var(--text-dark); }
+       .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+       section { padding: 140px 0; position: relative; overflow: hidden; }
+       .section-dark { background-color: var(--dark-bg); }
+       .section-light { background-color: var(--light-bg); border-top: 1px solid #1a2238; border-bottom: 1px solid #1a2238;}
+       .section-title { font-size: 3.5rem; margin-bottom: 25px; text-align: center; font-weight: 700; }
+       .section-intro { max-width: 800px; margin: 0 auto 60px auto; font-size: 1.15rem; text-align: center; color: #adb5bd; }
+       
+       .hero {
+           height: 100vh;
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           overflow: hidden;
+       }
+       .hero-bg-img {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           z-index: 1;
+       }
+       .hero .overlay {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: linear-gradient(to top, rgba(1, 2, 10, 0.95) 0%, rgba(0, 0, 0, 0.55) 100%);
+           z-index: 2;
+       }
+       .hero-content { position: relative; z-index: 3; text-shadow: 2px 2px 15px rgba(0,0,0,0.9); }
+       .hero h1 { font-family: var(--font-brand); font-size: 7rem; font-weight: 400; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 1rem; line-height: 1; }
+       .hero p { font-size: 1.8rem; margin-bottom: 2.5rem; font-style: italic; font-weight: 300; }
+       .hero-buttons a { margin: 0 10px; }
+       .btn {
+           display: inline-block;
+           background: var(--primary-color);
+           color: var(--dark-bg);
+           padding: 1rem 2.8rem;
+           border-radius: 50px;
+           font-weight: 600;
+           transition: all 0.3s ease;
+           text-transform: uppercase;
+           letter-spacing: 1.5px;
+           border: 2px solid var(--primary-color);
+           box-shadow: 0 5px 15px rgba(0, 180, 216, 0.2);
+       }
+       .btn:hover {
+           background-color: var(--secondary-color);
+           border-color: var(--secondary-color);
+           transform: translateY(-5px);
+           box-shadow: 0 10px 25px rgba(0, 180, 216, 0.4);
+       }
+       .btn-secondary { background: transparent; color: var(--primary-color); box-shadow: none; }
+       .btn-secondary:hover { background: var(--primary-color); color: var(--dark-bg); }
+
+       .trailer-container { position: relative; padding-bottom: 56.25%; height: 0; max-width: 1000px; margin: 0 auto; border-radius: 15px; box-shadow: 0 0 50px rgba(0, 180, 216, 0.4); overflow: hidden; }
+       .trailer-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+       .glide__slide { overflow: hidden; border-radius: 10px; }
+       .glide__slide img { width: 100%; height: 450px; object-fit: cover; transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); }
+       .glide__slide:hover img { transform: scale(1.08); }
+       .about-founder { display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap; text-align: left; }
+       .founder-image { flex: 1 1 300px; max-width: 350px; }
+       .founder-image img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 30px rgba(0, 180, 216, 0.2); }
+       .founder-bio { flex: 2 1 500px; }
+       .founder-bio h3 { font-size: 2.5rem; margin-bottom: 20px; }
+       .founder-bio p { max-width: 700px; font-family: var(--font-body); }
+       .founder-bio .quote { font-family: var(--font-brand); font-style: italic; font-size: 1.6rem; color: var(--primary-color); margin-top: 30px; padding-left: 20px; border-left: 3px solid var(--secondary-color); }
+       .mission-statement { margin-top: 30px; }
+       .bleached-corals-section { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+       .bleached-image { flex: 1 1 400px; }
+       .bleached-image img { width: 100%; height: auto; border-radius: 10px; }
+       .bleached-text { flex: 1 1 400px; text-align: left; }
+       .bleached-text h3 { font-size: 2rem; color: #ff6b6b; }
+       .join-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; }
+       .card { background: var(--light-bg); padding: 40px 30px; border-radius: 10px; border: 1px solid #1a2238; transition: all 0.4s ease; }
+       .card:hover { transform: translateY(-12px); box-shadow: 0 15px 30px rgba(0,0,0,0.5); border-color: var(--primary-color); }
+       .card h3 { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 15px; }
+
+       .tier-suggestion { text-align: center; font-style: italic; font-size: 1rem; max-width: 600px; margin: -20px auto 50px auto; color: #999; }
+       .donation-tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 60px; text-align: left; }
+       .tier-link { text-decoration: none; color: inherit; display: block; }
+       .tier-link .tier-card { height: 100%; }
+       .tier-card { background: var(--light-bg); padding: 30px 25px; border-radius: 10px; border: 1px solid #1a2238; transition: all 0.4s ease; display: flex; flex-direction: column; }
+       .tier-card:hover { transform: translateY(-12px); box-shadow: 0 15px 30px rgba(0,0,0,0.5); border-color: var(--primary-color); }
+       .tier-card .tier-title { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 10px; display: flex; align-items: center; gap: 10px;}
+       .tier-card .tier-title svg { width: 24px; height: 24px; fill: var(--primary-color); }
+       .tier-card .tier-amount { font-size: 2.5rem; font-weight: 700; font-family: var(--font-body); color: var(--text-dark); margin-bottom: 15px; }
+       .tier-card .tier-reward { font-size: 0.95rem; color: var(--text-light); flex-grow: 1; }
+       .custom-donate-title { text-align: center; font-size: 2.5rem; margin-top: 80px; margin-bottom: 20px; font-family: var(--font-brand); font-weight: 700; }
+
+       .trust-signal-container { text-align: center; margin-bottom: 40px; }
+       .trust-signal { display: inline-flex; align-items: center; gap: 10px; background-color: var(--light-bg); padding: 10px 20px; border-radius: 50px; border: 1px solid #1a2238; color: #aaa; font-size: 0.9rem;}
+       .trust-signal svg { width: 20px; height: 20px; fill: #aaa; }
+       .tagline { font-family: var(--font-brand); font-size: 1.5rem; font-style: italic; color: var(--primary-color); text-align: center; margin-top: -30px; margin-bottom: 50px; }
+
+       footer {
+           position: relative;
+           overflow: hidden;
+           background: url('https://raw.githubusercontent.com/oceanvoicetv-del/OceanVoice-site/main/images/gallery/dolphin_tail_bottom_of_page.jpg') center bottom / cover no-repeat;
+           padding: 120px 0;
+           text-align: center;
+           font-size: 0.9rem;
+           color: #e0e0e0;
+           text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+       }
+       footer::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 100%); z-index: 1; }
+       footer .container { position: relative; z-index: 2; }
+       .social-links { display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 25px;}
+       .social-links a { color: #e0e0e0; }
+       .social-links a:hover svg { fill: var(--primary-color); }
+       .social-links svg { width: 28px; height: 28px; fill: #e0e0e0; transition: fill 0.3s ease; }
+       footer p { margin-top: 25px; }
+
+       .sticky-donate-button {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           z-index: 1000;
+           opacity: 0;
+           transform: translateY(100px);
+           transition: opacity 0.5s ease, transform 0.5s ease;
+           pointer-events: none;
+       }
+       .back-to-top {
+           position: fixed;
+           bottom: 20px;
+           left: 20px;
+           z-index: 1000;
+           opacity: 0;
+           transform: translateY(100px);
+           background: var(--primary-color);
+           color: var(--dark-bg);
+           border: none;
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           cursor: pointer;
+           box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+           transition: opacity 0.5s ease, transform 0.5s ease;
+           pointer-events: none;
+       }
+       .back-to-top:hover { transform: scale(1.1) translateY(0); }
+
+       .visible {
+           opacity: 1;
+           transform: translateY(0);
+           pointer-events: auto;
+       }
+
+       @media (max-width: 992px) {
+           .hero h1 { font-size: 5rem; letter-spacing: 3px; }
+           .hero p { font-size: 1.5rem; }
+           .section-title { font-size: 2.8rem; }
+           .about-founder, .bleached-corals-section { text-align: center; }
+           .founder-image { margin-bottom: 30px; }
+       }
+       @media (max-width: 768px) {
+           .hero-bg-img { object-position: center 20%; }
+           .hero h1 { font-size: 3.5rem; }
+           .hero p { font-size: 1.2rem; }
+           section { padding: 100px 0; }
+           footer { background-position: center 90%; }
+       }
+   </style>
+   
+   <!-- Expanded SEO Schema Markup -->
    <script type="application/ld+json">
    {
      "@context": "https://schema.org",
+     "@type": "WebSite",
      "name": "Ocean Voice",
      "url": "https://www.oceanvoicetv.com/"
    }
    </script>
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Organization",
+     "name": "Ocean Voice",
+     "url": "https://www.oceanvoicetv.com/",
+     "logo": "https://raw.githubusercontent.com/oceanvoicetv-del/OceanVoice-site/main/images/gallery/oceanvoice_logo_logoblack.png",
+     "foundingDate": "2025",
+     "founder": { "@type": "Person", "name": "Otilio J. Nuñez" },
+     "description": "Ocean Voice is a global movement combining conservation, film, and education to protect marine ecosystems.",
+     "sameAs": ["https://www.instagram.com/oceanvoicetv", "https://www.facebook.com/oceanvoicetv", "https://www.youtube.com/@OceanVoiceTV", "https://x.com/oceanvoicetv"]
+   }
+   </script>
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "VideoObject",
+     "name": "Thirteen Moons: The Reef’s Last Voice (Official Trailer)",
+     "description": "The official trailer for Thirteen Moons, a 13-part documentary series from Ocean Voice about the fight to save our planet's coral reefs.",
+     "thumbnailUrl": "https://i.ytimg.com/vi/sP-EytLDSfw/maxresdefault.jpg",
+     "uploadDate": "2025-08-28",
+     "duration": "PT6M0S",
+     "embedUrl": "https://www.youtube.com/embed/sP-EytLDSfw"
+   }
+   </script>
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "FundingCampaign",
+     "name": "Fund Ocean Voice: Support Cinematic Ocean Conservation",
+     "description": "Support the fieldwork and filmmaking of Ocean Voice. Your tax-deductible contribution funds critical marine conservation efforts and the production of the documentary series 'Thirteen Moons'.",
+     "url": "https://www.oceanvoicetv.com/#support-us",
+     "funder": { "@type": "Organization", "name": "Ocean Voice", "url": "https://www.oceanvoicetv.com/" },
+     "sponsor": { "@type": "Organization", "name": "From the Heart Productions, Inc.", "taxID": "95-4445418" },
+     "potentialAction": {
+       "@type": "DonateAction",
+       "target": { "@type": "EntryPoint", "url": "https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" },
+       "description": "Make a tax-deductible donation to support our mission."
+     }
+   }
+   </script>
+   <script type="application/ld+json">
+   {
+       "@context": "https://schema.org",
+       "@type": "FAQPage",
+       "mainEntity": [{
+           "@type": "Question",
+           "name": "Is my donation tax-deductible?",
+           "acceptedAnswer": { "@type": "Answer", "text": "Yes, all donations are tax-deductible in the United States. They are processed through our nonprofit fiscal sponsor, From the Heart Productions, a registered 501(c)(3) organization (Tax ID: 95-4445418)." }
+       }, {
+           "@type": "Question",
+           "name": "Where does my donation go?",
+           "acceptedAnswer": { "@type": "Answer", "text": "Your contribution directly funds our on-the-ground conservation initiatives, including fieldwork, scientific data collection, educational outreach, and the production of our cinematic media." }
+       }, {
+           "@type": "Question",
+           "name": "How can I get involved besides donating?",
+           "acceptedAnswer": { "@type": "Answer", "text": "You can help by sharing our mission and content on social media, partnering with us if you represent an organization, or subscribing to our newsletter for updates." }
+       }]
+   }
+   </script>
+    <script type="application/ld+json">
+   {
+       "@context": "https://schema.org",
+       "@type": "BreadcrumbList",
+       "itemListElement": [
+           {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.oceanvoicetv.com/"},
+           {"@type": "ListItem", "position": 2, "name": "Trailer", "item": "https://www.oceanvoicetv.com/#trailer"},
+           {"@type": "ListItem", "position": 3, "name": "Support Us", "item": "https://www.oceanvoicetv.com/#support-us"}
+       ]
+   }
+   </script>
+
 </head>
 <body>
    <header class="hero">
+       <img src="https://raw.githubusercontent.com/oceanvoicetv-del/OceanVoice-site/main/images/gallery/OCEANVOICETV_TURTLE_UNDER_OCEANVOICE_TITLE_2.jpg" class="hero-bg-img" alt="A majestic sea turtle swims in the deep blue ocean, representing the life Ocean Voice fights to protect.">
        <div class="overlay"></div>
        <div class="hero-content container">
            <h1>Ocean Voice</h1>
@@ -119,9 +413,35 @@
        <section class="section-light" id="support-us">
            <div class="container">
                <h2 class="section-title">How Your Donation Protects Our Oceans</h2>
-               <p class="section-intro">Your tax-deductible donation is processed through our nonprofit fiscal sponsor, <strong><a href="https://www.fromtheheartproductions.com" target="_blank" rel="noopener noreferrer">From the Heart Productions</a> (Tax ID: 95-4445418)</strong>.</p>
-                <p class="section-intro" style="margin-top:-40px;"><strong>Where Donations Go:</strong> Every donation supports conservation fieldwork, educational outreach, and the production of cinematic media that amplifies the ocean’s voice.</p>
+               <p class="section-intro">Your tax-deductible donation is processed through our nonprofit fiscal sponsor, <strong><a href="https://www.fromtheheartproductions.com" target="_blank" rel="noopener noreferrer">From the Heart Productions</a> (Tax ID: 95-4445418)</strong>. This ensures a transparent and secure contribution to our mission.</p>
+               <p class="section-intro" style="margin-top:-40px;"><strong>Where Donations Go:</strong> Every donation supports conservation fieldwork, educational outreach, and the production of cinematic media that amplifies the ocean’s voice.</p>
+               <div class="trust-signal-container">
+                   <div class="trust-signal">
+                       <svg viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V13H5V6.3l7-3.11v9.8z"></path></svg>
+                       <span>Secure PayPal Donations</span>
+                   </div>
+               </div>
+               <p class="tagline">Global Impact, Local Action</p>
+               <div class="donation-tiers">
+                   <a href="https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" target="_blank" rel="noopener noreferrer" class="tier-link"><div class="tier-card"><h3 class="tier-title"><svg viewBox="0 0 24 24"><path d="M12 6c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 12c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"></path></svg>Symbolic Support</h3><div class="tier-amount">$1 - $5</div><p class="tier-reward">Send a symbolic wave of good luck. Every gesture of support amplifies our mission.</p></div></a>
+                   <a href="https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" target="_blank" rel="noopener noreferrer" class="tier-link"><div class="tier-card"><h3 class="tier-title"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>Supporter</h3><div class="tier-amount">$50</div><p class="tier-reward">Receive a stunning, high-resolution digital photo from our expeditions as a thank you.</p></div></a>
+                   <a href="https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" target="_blank" rel="noopener noreferrer" class="tier-link"><div class="tier-card"><h3 class="tier-title"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path></svg>Guardian</h3><div class="tier-amount">$300</div><p class="tier-reward">We'll post a social media video of a turtle, personally thanking you for your contribution.</p></div></a>
+                   <a href="https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" target="_blank" rel="noopener noreferrer" class="tier-link"><div class="tier-card"><h3 class="tier-title"><svg viewBox="0 0 24 24"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"></path></svg>Producer</h3><div class="tier-amount">$2,000</div><p class="tier-reward">Receive an official production credit in our landmark documentary series, 'Thirteen Moons'.</p></div></a>
+                   <a href="https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" target="_blank" rel="noopener noreferrer" class="tier-link"><div class="tier-card"><h3 class="tier-title"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.448l-7.416 4.025L6.064 15.134 0 9.306l8.332-1.151L12 .587z"></path></svg>Patron</h3><div class="tier-amount">$5,000+</div><p class="tier-reward">Receive a Patron Sponsor credit and an invitation to join a conservation dive in Thailand.</p></div></a>
+               </div>
+               <div style="text-align: center;">
+                   <h3 class="custom-donate-title" id="donate-custom">Choose Your Own Amount</h3>
+                   <p class="section-intro" style="margin-top: -15px; margin-bottom: 30px;">Every contribution directly supports our fieldwork and filmmaking.</p>
+                   <a href="https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6" class="btn" target="_blank" rel="noopener noreferrer">Donate Now</a>
+               </div>
            </div>
+       </section>
+
+       <section class="section-dark">
+            <div class="container">
+               <h2 class="section-title">Why Support Ocean Voice?</h2>
+               <p class="section-intro">We are more than filmmakers; we are a dedicated team of conservationists, educators, and scientists. Your support funds a multi-faceted approach to ocean preservation that creates lasting, measurable impact.</p>
+            </div>
        </section>
    </main>
 
@@ -139,7 +459,7 @@
        </div>
    </footer>
    
-   <a href="#donate-custom" class="sticky-donate-button btn">Donate Now</a>
+   <a href="#support-us" class="sticky-donate-button btn">Donate</a>
    <button class="back-to-top" aria-label="Back to top">↑</button>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js" defer></script>
